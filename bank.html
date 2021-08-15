@@ -17,10 +17,102 @@
  ---------------------------------------------------------------------------------->
     
  <header>
-    <h1 class="text-5xl text-center mt-16">
-        Welcome To 
-        <span class="font-semibold text-purple-600" >Bank</span>
+    
+    <h1 class="text-5xl text-center mt-8">
+        Secure Your 
+        <span class="font-semibold text-purple-600" >Money</span>
     </h1>
-</header>    
+</header> 
+<!--------------------------------------------------------------------------------- 
+  ////////////////////////////////// Main \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\  
+ ---------------------------------------------------------------------------------->
+<main class="w-3/4 mx-auto" >
+<!------------------------------------- 
+  /////// Balace - Statement \\\\\\\\\ 
+ -------------------------------------->
+    <section class="mt-8">
+        <div class="grid grid-cols-3 gap-4 ">
+
+            <!-- Deposite -->
+            <div class="text-white bg-blue-300 p-8 rounded">
+                <h3 class="text-2xl">Deposite</h3>
+                <h3 class="text-4xl">$000</h3>
+            </div>
+            <!-- Withdraw -->
+            <div class="text-white bg-green-300 p-8 rounded">
+                <h3 class="text-2xl">Withdraw</h3>
+                <h3 class="text-4xl">$000</h3>
+            </div>
+            <!-- Balance -->
+            <div class="text-white bg-yellow-400 p-8 rounded">
+                <h3 class="text-2xl">Balance</h3>
+                <h3 class="text-4xl">$000</h3>
+            </div>
+
+        </div>
+    </section>
+<!------------------------------------- 
+  /////////// Transaction \\\\\\\\\\\\ 
+ -------------------------------------->
+    <section class="mt-8">
+        <div class="grid grid-cols-2 gap-4">
+
+            <!-- Deposite Amount -->
+            <div class="bg-blue-100 p-8 rounded">
+                <h3 class="text-2xl">Please Deposite</h3>
+                <div>
+
+                    <!-- Deposite Field -->
+                    <input 
+                    id="deposite-amount"
+                    class="
+                    block 
+                    border 
+                    border-gray-400 
+                    rounded
+                    w-3/4
+                    px-2
+                    mb-4" type="text" placeholder="$ you want to deposite">
+    
+                        
+                    <!-- Deposite Button -->
+                    <button id="deposite-button" class="bg-blue-600 px-4 py-2 rounded text-white font-medium" >Deposite</button>
+    
+    
+                </div>
+            </div>
+
+            <!-- Withdraw Amount -->
+            <div class="bg-green-100 p-8 rounded">
+                <h3 class="text-2xl">Please Withdraw</h3>
+                <div>
+
+                    <!-- Withdraw Field -->
+                    <input 
+                    id="withdraw-amount"
+                    class="
+                    block 
+                    border 
+                    border-gray-400 
+                    rounded
+                    w-3/4
+                    px-2
+                    mb-4" type="text" placeholder="$ you want to withdraw">
+    
+                        
+                    <!-- Deposite Button -->
+                    <button id="withdraw-button" class="bg-green-600 px-4 py-2 rounded text-white font-medium" >Withdraw</button>
+    
+    
+                </div>
+            </div>
+
+            
+
+        </div>
+    </section>
+
+</main>
+
 </body>
 </html>
