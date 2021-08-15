@@ -2,22 +2,32 @@
 /////////// Home Page \\\\\\\\\\\\\\\\\\\
 
 //Deposite
-document.getElementById('deposite-button').addEventListener('click',
+document.getElementById('deposit-button').addEventListener('click',
 
 function()
 {
-    // console.log('deposite button clicked');
+    // console.log('deposit button clicked');
 
-    const depositeAmount = document.getElementById('deposite-amount');
-    const totalDeposite = depositeAmount.value;
+    const depositAmount = document.getElementById('deposit-amount');
+    const totalDeposit = depositAmount.value;
 
-    console.log(totalDeposite);
+    // console.log(totalDeposite);
 
-    const currentDeposite = document.getElementById('current-deposite');
-    currentDeposite.innerText = totalDeposite;
+    const currentDeposit = document.getElementById('current-deposit');
 
-    //null the input field
-    depositeAmount.value = '';
+    //(1)Putting input value in main statement
+    // currentDeposit.innerText = totalDeposit;
+
+    //(2)Now adding new continuous values
+    const previousCurrentDeposit = currentDeposit.innerText;
+    //Remember? parseFloat
+    const totalCurrentDeposit = parseFloat(previousCurrentDeposit) + parseFloat(totalDeposit);
+    currentDeposit.innerText = totalCurrentDeposit; //Result
+   
+    //(3)null the diposit input field
+    depositAmount.value = ''; //Result
+
+
 
 }
 
