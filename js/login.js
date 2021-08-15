@@ -1,3 +1,5 @@
+/////////// Log in Page \\\\\\\\\\\\\\\\\\\
+
 document.getElementById('login-button').addEventListener('click',
 
 function()
@@ -20,3 +22,5 @@ function()
 }
 
 )
+
+
